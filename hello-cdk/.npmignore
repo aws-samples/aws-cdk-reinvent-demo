@@ -1,2 +1,7 @@
 *.ts
 !*.d.ts
+
+tsconfig.json
+*.tsbuildinfo
+
+cdk.out

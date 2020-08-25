@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import cdk = require('@aws-cdk/cdk');
+import cdk = require('@aws-cdk/core');
 import { QueueRecorder } from '../lib/queue-recorder';
 import tq = require('cdk-tweet-queue');
 
@@ -10,7 +10,7 @@ class HelloCdkStack extends cdk.Stack {
     const queue = new tq.TweetQueue(this, 'Tweets', {
       // TODO: Follow the instructions on the cdk-tweet-queue NPM page
       //       to set up your Twitter API keys in AWS Secrets Manager
-      //       and plug it in to the secretArn parameter below. 
+      //       and plug it in to the secretArn parameter below.
       //       https://www.npmjs.com/package/cdk-tweet-queue
       secretArn: "",
       query: '#awscdk'
@@ -24,4 +24,4 @@ class HelloCdkStack extends cdk.Stack {
 
 const app = new cdk.App();
 new HelloCdkStack(app, 'HelloCdkStack');
-app.run();
+app.synth();
