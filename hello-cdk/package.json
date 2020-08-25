@@ -14,7 +14,7 @@
     "devDependencies": {
         "@types/node": "^8.9.4",
         "typescript": "^3.1.2",
-        "aws-cdk": "^0.18.1"
+        "aws-cdk": "^1.60.0"
     },
     "dependencies": {
         "@aws-cdk/aws-dynamodb": "^0.18.1",
