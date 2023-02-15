@@ -25,6 +25,6 @@
         "@aws-cdk/aws-sqs": "^1.60.0",
         "@aws-cdk/core": "^1.60.0",
         "cdk-tweet-queue": "^1.0.3",
-        "constructs": "^3.0.4"
+        "constructs": "^3.4.246"
     }
 }
